@@ -1,0 +1,48 @@
+//getStocks
+{
+}
+
+{
+  'data' : [
+    { "id": 2,
+      "name": "test",
+      "prices": [{"time": 1596249001.0, "value": 1000.0}, {"time": 1596249002.0, "value": 1000.0}, {"time": 1596249032.0, "value": 1019.3548387096774}]
+    }
+  ]
+}
+
+
+//getDom
+{
+  "name": 'DS_1'
+}
+
+{
+  'dom': {
+    '1.0': 1000,
+    '0.1': 9000
+  }
+}
+
+
+
+//login
+{
+  'login': "asdf",
+  'password': 'qwerty'
+}
+
+{
+  'hash': asdf,
+  'worked': true
+}
+
+//place trade
+{
+  'price' : 1.0,
+  'volume' : 100
+}
+
+{
+  'worked': true
+}

@@ -1,0 +1,9 @@
+[{"user": 1, "project": 1, "price": 1000.0, "number": 1000, "tradeType": 0},
+ {"user": 1, "project": 2, "price": 8700.0, "number": 900, "tradeType": 1},
+ {"user": 1, "project": 2, "price": 8750, "number": 3000, "tradeType": 1},
+ {"user": 1, "project": 2, "price": 8740.01, "number": 200, "tradeType": 1},
+ {"user": 1, "project": 2, "price": 8740.01, "number": 200, "tradeType": 1},
+ {"user": 1, "project": 2, "price": 8735.01, "number": 50, "tradeType": 1},
+ {"user": 1, "project": 2, "price": 8639.5, "number": 30, "tradeType": 1},
+ {"user": 1, "project": 2, "price": 8750, "number": 3000, "tradeType": 1},
+ {"user": 2, "project": 8, "price": 120.0, "number": 12, "tradeType": 1}]

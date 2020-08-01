@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>GoTo Stonks</title>
+
+</head>
+<body style="overflow: hidden; height: 100%">
+<input type="hidden" name="mental" value="querty" id="userHiddenInput">
+<nav class="navbar navbar-default bg-dark text-white">
+    <a class="navbar-brand" href="./" style="color:white;">GoTo Stonks</a>
+    <span class="navbar-text">
+            <a href="./logout" style="color:white;">Выход</a>
+        </span>
+</nav>
+<div class="container column-full" style="max-width: 95%;">
+    <div class="row column-full">
+
+        <div class="col-md-8 column-full" style="padding-right: 10px;">
+
+            <div class="widgetdiv" style="height:8%;">
+                <h2 style="text-align: center;line-height: normal;vertical-align: middle;" id="running_bar">Алексей
+                    Вильнюсов dead_inside! insta: runov_8</h2>
+            </div>
+
+            <div class="widgetdiv" style="height:65%">
+                <div style="height: 100%;" id="price_graph">
+                </div>
+            </div>
+
+            <div class="widgetdiv" style="height: 26%;">
+                <div style="display: flex;">
+                    <button class="openTradesButton" style="border: 0px;border-radius: 10px;" id="openTradesButton">Open Trades</button>
+                    <button class="pendingTradesButton" style="border: 0px;border-radius: 10px;margin-left: 5px;" id="pendingTradesButton">Pending Trades</button>
+                </div>
+                <div style="height: Calc(100% - 26px);padding: 8px;" id="tradesDiv">
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-2 column-full" style="padding: 0px">
+
+            <div class="widgetdiv" style="height:101%;" id="trade_panel">
+                <h4 style="text-align: center;">Цена</h4>
+                <input type="number" min="0.1" style="width: 100%;margin-bottom: 30px;" id="priceInput"/>
+                <h4 style="text-align: center;">Обьем</h4>
+                <input type="number" min="1" style="width: 100%;margin-bottom: 30px;" id="volumeInput"/>
+                <span>
+                        <button onclick="sendBuyPosition()"
+                                style="width: 48%;background-color: #1E88E5;color: white;border-radius: 8px;"
+                                id="buyButton">Buy</button>
+                        <button onclick="sendSellPosition()"
+                                style="width: 48%;background-color: #FF5252;color: white;border-radius: 8px;"
+                                id="sellButton">Sell</button>
+                    </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-2 column-full" style="padding-left: 10px;">
+            <div class="widgetdiv" style="height: Calc(37.5% - 40px);" id="stock_widget">
+                <ol id='stock_list' class="better-list" style="overflow-x: hidden;overflow-y: auto;">
+                </ol>
+            </div>
+            <div class="widgetdiv" style="height:Calc(62.5% + 40px);color: white;" id="dom">
+                <div style="display: flex;color: black;text-align: center;">
+                    <p style="width: 49%;background-color: #EFEFEF;border-top-left-radius: 8px;border-bottom-left-radius: 8px">
+                        Цена</p>
+                    <p style="width: 49%;background-color: #EFEFEF;border-top-right-radius: 8px;border-bottom-right-radius: 8px;">
+                        Обьем</p>
+                </div>
+                <ol class="better-list text-center" id="upper_dom">
+                    <div style="display: flex;align: bottom;">
+                    </div>
+                </ol>
+                <p id="domStockPrice" style="border-bottom: 2px; border-top: 2px; color: black;"></p>
+                <ol class="better-list" id="lower_dom">
+                    <div style="display: flex;">
+
+                    </div>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./dist/bundle.js"></script>
+</body>
+</html>
